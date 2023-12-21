@@ -4,6 +4,7 @@ const productsSchema = mongoose.Schema({
     name:String,
     id:Number,
     price:Number,
+    salePrice:Number
     // _id:mongoose.Schema.ObjectId
 },{collection:"Products"})
 

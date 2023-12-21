@@ -30,7 +30,7 @@ const getUpdateUser = async (req, res) => {
   let id = req.params.id;
   let updateUser = await Products.findOneAndUpdate(
     { _id: id },
-    { name: req.body.name }
+    { name: req.body.name,price:req.body.price,salePrice:req.body.salePrice,id:req.body.id }
   );
 };
 
